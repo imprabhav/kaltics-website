@@ -17,7 +17,7 @@ const Innovation = () => {
                 Our Innovation
               </h2>
 
-              <p className="mt-4 max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+              <p className="mt-4 text-justify max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
                Quasar is a revolutionary product that seamlessly integrates advanced technology into your daily life. It captures comprehensive body metrics, provides dual sound output as headphones and Bluetooth speakers, and features in-built FM radio, music storage, and cloud connectivity. Designed with AI CAD technology, Quasar is a smart device offering music and biometric tracking on the go, all without the need for a mobile device. Experience the future of smart living with Quasar.
               </p>
             </div>
