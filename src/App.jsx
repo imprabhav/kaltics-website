@@ -1,6 +1,4 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
 import TeamSection from './components/TeamSection'
 import Testimonals from './components/Testimonals'
 import FooterNav from './components/FooterNav'
