@@ -124,7 +124,10 @@
 /* eslint-disable react/display-name */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/display-name */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/display-name */
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/kalticsblack.png";
 
 export default () => {
@@ -138,17 +141,14 @@ export default () => {
       subItems: [
         { title: "Data Analytics", path: "/dataanalysis" },
         { title: "Product Development", path: "/prod" },
-        { title: "Cyber Security", path: "/prod" },
+        { title: "Cyber Security", path: "/cybersecurity" },
         { title: "SAP", path: "/sap" },
-        { title: "Cloud Services", path: "/cd" },
-        { title: "Script/Bot Development", path: "/scrript" },
-
-        
+        { title: "Cloud Services", path: "/cloudservices" },
+        { title: "Script/Bot Development", path: "/scriptdevelopment" },
       ],
     },
     { title: "Career", path: "/careers" },
-    { title: "Blog", path: "/blogs" }
-
+    { title: "Blog", path: "/blogs" },
   ];
 
   useEffect(() => {
@@ -163,9 +163,9 @@ export default () => {
 
   const Brand = () => (
     <div className="flex items-center justify-between py-5 md:block" id="home">
-      <a href="/">
+      <Link to="/">
         <img src={logo} width={150} height={50} alt="logo" />
-      </a>
+      </Link>
       <div className="md:hidden">
         <button
           className="menu-btn text-gray-500 hover:text-gray-800"
@@ -244,7 +244,7 @@ export default () => {
                             key={subIdx}
                             className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
                           >
-                            <a href={subItem.path}>{subItem.title}</a>
+                            <Link to={subItem.path}>{subItem.title}</Link>
                           </li>
                         ))}
                       </ul>
@@ -252,16 +252,16 @@ export default () => {
                   </li>
                 ) : (
                   <li key={idx} className="text-gray-700 hover:text-gray-900">
-                    <a href={item.path} className="block">
+                    <Link to={item.path} className="block">
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 )
               )}
             </ul>
             <div className="items-center justify-end mt-6 space-y-6 md:flex md:mt-0">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex"
               >
                 Contact Us
@@ -277,7 +277,7 @@ export default () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -285,4 +285,3 @@ export default () => {
     </header>
   );
 };
-
