@@ -126,6 +126,10 @@
 /* eslint-disable react/display-name */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/display-name */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/display-name */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/display-name */
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/kalticsblack.png";
@@ -141,10 +145,10 @@ export default () => {
       subItems: [
         { title: "Data Analytics", path: "/dataanalysis" },
         { title: "Product Development", path: "/prod" },
-        { title: "Cyber Security", path: "/cybersecurity" },
+        { title: "Cyber Security", path: "/cs" },
         { title: "SAP", path: "/sap" },
-        { title: "Cloud Services", path: "/cloudservices" },
-        { title: "Script/Bot Development", path: "/scriptdevelopment" },
+        { title: "Cloud Services", path: "/cld" },
+        { title: "Script/Bot Development", path: "/script" },
       ],
     },
     { title: "Career", path: "/careers" },
