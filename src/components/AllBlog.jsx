@@ -70,31 +70,13 @@
 
 // export default AllBlog;
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import FooterNav from './FooterNav';
 import blogData from './data/blogData';
 
 const AllBlog = () => {
   const navigate = useNavigate();
-  const blogs = [
-    {
-      id: 'firstblog',
-      imgSrc: 'https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80',
-      title: 'Revenge of the Never Trumpers',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry...',
-      authorImg: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
-      authorName: 'Ahmad Sultani',
-    },
-    {
-      id: 'secondblog',
-      imgSrc: 'https://images.unsplash.com/photo-1562851529-c370841f6536?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80',
-      title: 'How Google Assistant now helps you record stories for kids',
-      description: 'Google is constantly updating its consumer AI, Google Assistant, with new features...',
-      authorImg: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80',
-      authorName: 'Aaron Larsson',
-    }
-  ];
 
   const handleCardClick = (id) => {
     navigate(`/singleblog/${id}`);
@@ -110,7 +92,11 @@ const AllBlog = () => {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogData.map((blog) => (
-            <div key={blog.id} className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5" onClick={() => handleCardClick(blog.id)}>
+            <Link 
+              key={blog.id} 
+              to={`/singleblog/${blog.id}`} 
+              className="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5"
+            >
               <div className="aspect-w-16 aspect-h-11">
                 <img className="w-full object-cover rounded-xl" src={blog.imgSrc} alt={blog.title} />
               </div>
@@ -124,7 +110,7 @@ const AllBlog = () => {
                   <h5 className="text-sm text-gray-800">By {blog.author}</h5>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -134,3 +120,4 @@ const AllBlog = () => {
 };
 
 export default AllBlog;
+

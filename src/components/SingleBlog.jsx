@@ -87,7 +87,7 @@
 
 // export default SingleBlog;
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Navbar from './Navbar';
 import FooterNav from './FooterNav';
 import blogData from '../components/data/blogData.js'; 
@@ -118,15 +118,15 @@ const SingleBlog = () => {
               <h1 className="text-gray-900 font-bold text-3xl mb-2">{blog.title}</h1>
               <p className="text-gray-700 text-xs mt-2">
                 Written By:{' '}
-                <a href="#" className="text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out">
+                <Link to="#" className="text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out">
                   {blog.author}
-                </a>{' '}
+                </Link>{' '}
                 In{' '}
                 {blog.categories.map((category, index) => (
                   <span key={index}>
-                    <a href="#" className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out">
+                    <Link to="#" className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out">
                       {category}
-                    </a>
+                    </Link>
                     {index < blog.categories.length - 1 && ', '}
                   </span>
                 ))}
@@ -146,9 +146,9 @@ const SingleBlog = () => {
 
               {blog.tags.map((tag, index) => (
                 <React.Fragment key={index}>
-                  <a href="#" className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out">
+                  <Link to="#" className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out">
                     #{tag}
-                  </a>
+                  </Link>
                   {index < blog.tags.length - 1 && ', '}
                 </React.Fragment>
               ))}

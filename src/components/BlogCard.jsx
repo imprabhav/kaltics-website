@@ -133,35 +133,8 @@
 
 // export default BlogCard;
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import blogData from './data/blogData';
-
-// JSON data
-const blogData2 = [
-  {
-    "id": "firstblog",
-    "imgSrc": "https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80",
-    "category": "Product",
-    "title": "Better is when everything works together"
-  },
-  {
-    "id": "secondblog",
-    "imgSrc": "https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80",
-    "category": "Business",
-    "title": "What CFR really is about"
-  },
-  {
-    "id": "thirdblog",
-    "imgSrc": "https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80",
-    "category": "Business",
-    "title": "Should Product Owners think like entrepreneurs?"
-  },
-  {
-    "id": "fourthblog",
-    "imgSrc": "https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80",
-    "category": "Facilitate",
-    "title": "Announcing Front Strategies: Ready-to-use rules"
-  }
-];
 
 const BlogCard = () => {
   return (
@@ -176,16 +149,16 @@ const BlogCard = () => {
       {/* Grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
         {blogData.map((blog) => (
-          <a
+          <Link
             key={blog.id}
             className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition"
-            href={`/singleblog/${blog.id}`}
+            to={`/singleblog/${blog.id}`} // Use Link instead of <a> and use the 'to' prop
           >
             <div className="aspect-w-16 aspect-h-9">
               <img
                 className="w-full object-cover rounded-t-xl"
                 src={blog.imgSrc}
-                alt="Blog Image"
+                alt={`Image for ${blog.title}`}
               />
             </div>
             <div className="p-4 md:p-5">
@@ -194,7 +167,7 @@ const BlogCard = () => {
                 {blog.title}
               </h3>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
       {/* End Grid */}
@@ -204,9 +177,9 @@ const BlogCard = () => {
         <div className="inline-block bg-white border shadow-sm rounded-full">
           <div className="py-3 px-4 flex items-center gap-x-2">
             <p className="text-gray-600">Want to read more?</p>
-            <a
+            <Link
               className="inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium"
-              href="/blogs"
+              to="/blogs"
             >
               Go here
               <svg
@@ -223,7 +196,7 @@ const BlogCard = () => {
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -233,3 +206,4 @@ const BlogCard = () => {
 };
 
 export default BlogCard;
+
