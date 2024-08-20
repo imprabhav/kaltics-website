@@ -2,7 +2,7 @@
 /* eslint-disable react/display-name */
 import { useEffect, useState } from "react";
 import logo from "../assets/kalticsblack.png";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { array2 } from "../main";
 import Navbar from "./Navbar";
 
@@ -86,8 +86,8 @@ export default () => {
         <section>
           <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
             <div className="flex-none space-y-5 max-w-xl">
-              <a
-                href="/blogs"
+             <Link
+                to="/blogs"
                 className="inline-flex gap-x-6 items-center rounded-full p-1 pr-6 border text-sm font-medium duration-150 hover:bg-white"
               >
                 <span className="inline-block rounded-full px-3 py-1 bg-indigo-600 text-white">
@@ -134,7 +134,7 @@ export default () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
