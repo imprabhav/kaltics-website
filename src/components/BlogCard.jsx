@@ -141,8 +141,8 @@ const BlogCard = () => {
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       {/* Title */}
       <div className="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
-        <h2 className="text-2xl font-bold text-gray-800 md:text-4xl md:leading-tight">Read our latest news</h2>
-        <p className="mt-1 text-gray-600">We've helped some great companies brand, design and get to market.</p>
+        <h2 className="text-2xl font-bold text-gray-800 md:text-4xl md:leading-tight">Read our latest blogs</h2>
+        <p className="mt-1 text-gray-600">Stay updated with the newest trends and insights.</p>
       </div>
       {/* End Title */}
 

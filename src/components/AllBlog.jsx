@@ -106,9 +106,9 @@ const AllBlog = () => {
               </div>
               <div className="mt-auto flex items-center gap-x-3">
                 {/* <img className="size-8 rounded-full" src={blog.authorImg} alt={blog.authorName} /> */}
-                <div>
+                {/* <div>
                   <h5 className="text-sm text-gray-800">By {blog.author}</h5>
-                </div>
+                </div> */}
               </div>
             </Link>
           ))}

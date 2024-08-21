@@ -7,10 +7,12 @@ import Career from './components/Career.jsx';
 import Contact2 from './components/contact2.jsx';
 import ServicePage from './components/service/ServicePage'
 import { array2 } from './main'
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 const App = () => {
   return (
     <Router>
+    <ScrollToTop/>
       <Routes>
       {array2.map((a) => (
           <Route path={a.path} element={<ServicePage value={a.title}

@@ -6,24 +6,24 @@ export default () => {
   const Testimonials = [
     {
       avatar: client,
-      name: "Martin escobar",
-      title: "Founder of meta",
+      name: "RKS Architect",
+      title: "Product Development Client",
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae.",
+        "Your team delivered a top-notch app that perfectly fits our architectural needs. The design, functionality, and timely delivery exceeded our expectations!",
     },
     {
       avatar: client,
-      name: "Simon andrew",
-      title: "Software engineer",
+      name: "EduPlanet",
+      title: "Product Development Client",
       quote:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "We are delighted with the website your team created. It's user-friendly, visually appealing, and has greatly enhanced our online presence.",
     },
     {
       avatar: client,
-      name: "Micheal worin",
-      title: "Product designer",
+      name: "LSAG India LLP",
+      title: "Data Analytics Client",
       quote:
-        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.",
+        "They have helped us in establishing the data and analytics infrastructure for our products and services and has handed us the ownership as well.",
     },
   ];
 
@@ -35,9 +35,8 @@ export default () => {
             Hear from our customers
           </h3>
           <p className="mt-3 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est
-            hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna
-            lorem, euismod volutpat arcu volutpat et.
+          See What Our Customers Have to Say About Their Experiences with Us. 
+          Discover the Difference We've Made.
           </p>
         </div>
         <div className="mt-12">

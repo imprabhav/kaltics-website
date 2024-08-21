@@ -1,65 +1,66 @@
-export default () => {
+import { Link } from 'react-router-dom';
 
+export default () => {
     const footerNavs = [
         {
             label: "Resources",
             items: [
                 {
-                    href: 'javascript:void()',
-                    name: 'contact'
+                    to: '/contact',
+                    name: 'Contact'
                 },
-                {
-                    href: 'javascript:void()',
-                    name: 'Support'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Documentation'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Pricing'
-                },
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Support'
+                // },
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Documentation'
+                // },
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Pricing'
+                // },
             ],
         },
-        {
-            label: "About",
-            items: [
-                {
-                    href: 'javascript:void()',
-                    name: 'Terms'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'License'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Privacy'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'About US'
-                },
-            ]
-        },
+        // {
+        //     label: "About",
+        //     items: [
+        //         {
+        //             to: 'javascript:void()',
+        //             name: 'Terms'
+        //         },
+        //         {
+        //             to: 'javascript:void()',
+        //             name: 'License'
+        //         },
+        //         {
+        //             to: 'javascript:void()',
+        //             name: 'Privacy'
+        //         },
+        //         {
+        //             to: 'javascript:void()',
+        //             name: 'About US'
+        //         },
+        //     ]
+        // },
         {
             label: "Explore",
             items: [
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Showcase'
+                // },
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Roadmap'
+                // },
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Languages'
+                // },
                 {
-                    href: 'javascript:void()',
-                    name: 'Showcase'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Roadmap'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Languages'
-                },
-                {
-                    href: 'javascript:void()',
+                    to: '/blogs',
                     name: 'Blog'
                 },
             ]
@@ -67,16 +68,16 @@ export default () => {
         {
             label: "Company",
             items: [
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Partners'
+                // },
+                // {
+                //     to: 'javascript:void()',
+                //     name: 'Team'
+                // },
                 {
-                    href: 'javascript:void()',
-                    name: 'Partners'
-                },
-                {
-                    href: 'javascript:void()',
-                    name: 'Team'
-                },
-                {
-                    href: 'javascript:void()',
+                    to: '/careers',
                     name: 'Careers'
                 },
             ],
@@ -124,13 +125,12 @@ export default () => {
                                 {
                                     item.items.map(((el, idx) => (
                                         <li key={idx}>
-                                            <a
-                                                href={el.href}
+                                            <Link
+                                                to={el.to}
                                                 className="duration-150 hover:text-gray-400"
-
                                             >
                                                 {el.name}
-                                            </a>
+                                            </Link>
                                         </li>
                                     )))
                                 }
