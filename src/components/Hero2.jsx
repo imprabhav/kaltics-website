@@ -113,8 +113,7 @@ export default () => {
                 Build with Kaltics
               </h1>
               <p>
-                Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-                doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+              Innovative Solutions Across Product Development, SAP, Data Analytics, Cloud Services and Script Development
               </p>
               <div className="flex items-center gap-x-3 sm:text-sm">
                 <a
