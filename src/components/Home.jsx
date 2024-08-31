@@ -6,6 +6,7 @@ import Contact from '../components/Contact'
 import Service from '../components/Service'
 import Innovation from '../components/Innovation'
 import BlogCard from '../components/BlogCard'
+import Service2 from './Service2'
 
 const Home = () => {
   return (
@@ -16,7 +17,8 @@ const Home = () => {
       {/* <Hero/> */}
       <Hero2/>
       {/* <TeamSection/> */}
-      <Service/>
+      {/* <Service/> */}
+      <Service2/>
       {/* <Innovation/> */}
       <BlogCard/>
       <Testimonals/>

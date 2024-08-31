@@ -156,13 +156,13 @@ const BlogCard = () => {
           >
             <div className="aspect-w-16 aspect-h-9">
               <img
-                className="w-full object-cover rounded-t-xl"
+                className="w-full h-full object-cover rounded-t-xl"
                 src={blog.imgSrc}
                 alt={`Image for ${blog.title}`}
               />
             </div>
             <div className="p-4 md:p-5">
-              <p className="mt-2 text-xs uppercase text-gray-600">{blog.category}</p>
+              <p className="mt-2 text-xs uppercase font-bold text-gray-600">{blog.category}</p>
               <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600">
                 {blog.title}
               </h3>

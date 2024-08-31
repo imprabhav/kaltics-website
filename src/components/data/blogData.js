@@ -87,7 +87,7 @@ In conclusion, the future of electric vehicles is looking promising. With their 
   },
   {
     id: "thirdblog",
-    imgSrc: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWl8ZW58MHx8MHx8fDA%3D",
+    imgSrc: "https://images.unsplash.com/photo-1625314868143-20e93ce3ff33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWl8ZW58MHx8MHx8fDA%3D",
     category: "Technology",
     title: "Life with Ai",
     // author: "Alice Johnson",

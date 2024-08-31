@@ -164,7 +164,6 @@ export default () => {
     );
 };
 
-
 // export default () => {
 
 //     const contactMethods = [

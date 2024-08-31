@@ -54,7 +54,7 @@ const Career = () => {
             <p className="text-gray-500 text-center text-lg font-normal leading-7 lg:mb-14 mb-6">
               We want to provide a user-friendly experience with eye-catching design and develop products <br /> quickly with the ability to solve user problems.
             </p>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-4 lg:gap-x-8 gap-y-4 lg:pb-24 pb-10 border-b border-gray-200 max-w-lg mx-auto md:max-w-3xl lg:max-w-full">
+            {/* <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-4 lg:gap-x-8 gap-y-4 lg:pb-24 pb-10 border-b border-gray-200 max-w-lg mx-auto md:max-w-3xl lg:max-w-full">
             <div class="p-8 group  hover:rounded-2xl transition-all duration-500 hover:shadow-md cursor-pointer">
               <div class="w-20 h-20 bg-indigo-50 rounded-xl flex items-center justify-center mb-5 max-lg:mx-auto transition-all duration-500 group-hover:bg-indigo-600">
                 <svg class="fill-indigo-600 transition-all duration-500 group-hover:fill-indigo-50" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@ const Career = () => {
               <h4 class="text-gray-900 text-lg font-semibold leading-7 mb-3 max-lg:text-center">Commitment</h4>
               <p class="text-gray-500 text-sm font-normal leading-5 max-lg:text-center">Build your beautiful agency website with us that converts more visitors than any other website and the ability to interact and rotate products to solve user problems.</p>
             </div>
-          </div>
+          </div> */}
           <div class="lg:mt-24 mt-10 bg-gradient-to-l from-violet-600 to-indigo-600 p-12 rounded-2xl ">
             <div class="lg:flex items-center justify-between gap-6">
               <div class="lg:mb-0 mb-10">

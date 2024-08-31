@@ -136,7 +136,7 @@ export default () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-4 justify-center mt-8 md:mt-0">
               {array2.map((a, i) => (
                 <div
                   className="flex flex-col items-center gap-x-6 p-4 rounded-lg bg-indigo-50 cursor-pointer h-30 w-40"
