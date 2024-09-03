@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/kalticsblack.png";
+import logo from "../assets/kalticslogo2.png";
 
 export default () => {
   const [isScrolled, setIsScrolled] = useState(false);
