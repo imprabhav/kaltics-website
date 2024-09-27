@@ -1,6 +1,6 @@
 // import React from 'react';
 // import Navbar from './Navbar';
-// import FooterNav from './FooterNav';
+// import FooterNav from './FooterNav'
 
 // const AllBlog = () => {
 //   const blogs = [
